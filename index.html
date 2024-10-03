@@ -20,6 +20,9 @@
     <!-- Tailwind - Css -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Style - Css -->
+    <link rel="stylesheet" href="style.css">
+
     <!-- Custom - Tailwind -->
     <script>
         tailwind.config = {
@@ -42,7 +45,7 @@
                 <a href="#"><img src="images/logo.png" alt="image"></a>
                 <div>
                     <label class="input input-bordered flex items-center gap-2">
-                        <input type="text" class="grow" placeholder="Search" />
+                        <input id="search-input" type="text" class="grow" placeholder="Search" />
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 16 16"
@@ -55,7 +58,7 @@
                         </svg>
                     </label>
                 </div>
-                <button class="btn w-20 text-[18px]">Sort</button>
+                <button class="btn w-20 text-[18px] text-white bg-red-600">Sort</button>
             </nav>
 
             <!-- Tabs - btn -->
@@ -65,6 +68,16 @@
         </div>
     </header>
 
+    <!-- main-area start here -->
+    <main>
+        <section class="videos-area">
+            <div class="container lg:max-w-[1320px] mx-auto md:px-5 lg:px-16">
+                <div id="videos-container" class="grid gap-5 grid-cols-1 sm:grid-cols-2 md:gap-6 md:grid-cols-3 lg:grid-cols-4">
+
+                </div>
+            </div>
+        </section>
+    </main>
 
     
     <script src="js/scripts.js"></script>
